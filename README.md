@@ -1,1 +1,2 @@
-# Building a Vector Search with NodeJS, MongoDB and OpenAi
+# Building a Vector Search Microservice
+## With NodeJS, MongoDB and OpenAi
