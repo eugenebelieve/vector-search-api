@@ -1,1 +1,1 @@
-# vector-search-api
+# Building a Vector Search with NodeJS, MongoDB and OpenAi
