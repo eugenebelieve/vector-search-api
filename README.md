@@ -5,13 +5,13 @@
 ### What Stack are we going to use ?
 In this Step-by-step Guide we will be using MongoDB (Atlas), NodeJS and OpenAI 
 
-####We are going to build the Vector Search Microservice in 4 steps: 
+#### We are going to build the Vector Search Microservice in 4 steps: 
 1. Create and <b>Database, Collection</b> and <b>Vector Search index</b> on MongoDB Atlas.
 2. Create an <b>API key on OpenAI</b>.
 3. Create the <b>NodeJS microservice</b>.
 4. <b>Bonus</b> : Create a <b>Trigger on MongoDB Atlas</b> that will automatically generate Vector Embeddings for newly inserted or Updated documents.
 
-###1. Create a Vector Search index on MongoDB Atlas
+### 1. Create a Vector Search index on MongoDB Atlas
 - Go to www.mongodb.com and create an Accounts (if you don't have one) 
 - When you create a new Cluster, give it the <b>username</b>: <b>"demo"</b> and <b>password</b> : <b>"demo"</b>
 ![Alt text](images/user_password.png)
@@ -51,19 +51,19 @@ It should look like this :
 - [x] Now we have <b>successfully</b> create a <b>Vector Search Index</b> ! :tada:	
 
 ---
-###2. Create the API Key on OpenAI (Easy)
+### 2. Create the API Key on OpenAI (Easy)
 
 * Go to https://platform.openai.com/account/api-keys
 * Create a API `token` and save it somewhere
 ---
-###3. Creating the NodeJS Microservice (with Vector Search)
+### 3. Creating the NodeJS Microservice (with Vector Search)
 
-####Create a `index.js` file and install all the packages:
+#### Create a `index.js` file and install all the packages:
 ```shell 
 npm install axios cors express mongodb openai-api
 ```
 
-####Inside index.js import all the packages :
+#### Inside index.js import all the packages :
 ```javascript 
 const express = require('express');
 const { MongoClient } = require("mongodb");
@@ -78,7 +78,7 @@ const app = express();
 //app.use(cors());
 ```
 
-####Next, add the embedding function with OpenAI token:
+#### Next, add the embedding function with OpenAI token:
 ```javascript 
 /** OpenAI Embedding Function */
 async function openaiEmbedding(query) {
@@ -106,7 +106,7 @@ async function openaiEmbedding(query) {
   }
 }
 ```
-####Next, create the GET route:
+#### Next, create the GET route:
 - Change the URI with the one from Atlas URI:
   - When in your Atlas Console, just press on <b>"Connect"</b> and choose lastest <b>NodeJS</b> Driver:
 ![Alt text](images/mongodb-connect.png)
@@ -156,7 +156,7 @@ app.get("/vectorSearch/:query", async (req,res)=>{
 });
 ```
 
-####Setup the port and listener:
+#### Setup the port and listener:
 ```javascript
 /** PORT */ 
 const port = process.env.PORT || 8000;
