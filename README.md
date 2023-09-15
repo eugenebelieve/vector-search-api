@@ -12,6 +12,8 @@ In this Step-by-step Guide we will be using MongoDB (Atlas), NodeJS and OpenAI
 4. <b>Bonus</b> : Create a <b>Trigger on MongoDB Atlas</b> that will automatically generate Vector Embeddings for newly inserted or Updated documents.
 
 ---
+![MongoDB Stack](images/mongodb_stack.png)
+
 ### 1. Create a Vector Search index on MongoDB Atlas
 - Go to www.mongodb.com and create an Accounts (if you don't have one) 
 - When you create a new Cluster, give it the <b>username</b>: <b>"demo"</b> and <b>password</b> : <b>"demo"</b>
@@ -45,18 +47,22 @@ In this Step-by-step Guide we will be using MongoDB (Atlas), NodeJS and OpenAI
 
 It should look like this : 
 
-![Alt text](images/vector_index.png)
+![Vector Index](images/vector_index.png)
 
 ... then click next and create Search Index
 
 - [x] Now we have <b>successfully</b> create a <b>Vector Search Index</b> ! :tada:	
 
 ---
+![OpenAI Stack](images/openai_stack.png)
+
 ### 2. Create the API Key on OpenAI (Easy)
 
 * Go to https://platform.openai.com/account/api-keys
 * Create a API `token` and save it somewhere
 ---
+![NodeJS](images/nodejs_stack.png)
+
 ### 3. Creating the NodeJS Microservice (with Vector Search)
 
 #### Create a `index.js` file and install all the packages:
