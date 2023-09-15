@@ -1,5 +1,5 @@
 # Building a <b>Vector Search</b> Microservice on NodeJS<br />[Developers's Guide:fire:]
-![NodeJS+MongoDB+OpenAI](images/vector_stack.png)
+![NodeJS+MongoDB+OpenAI](images/vector_search_stack.png)
 
 ### What Stack are we going to use ?
 This is a <b>DEVELOPER</b> Step-by-step Guide in which we will be using MongoDB (Atlas), NodeJS and OpenAI 
