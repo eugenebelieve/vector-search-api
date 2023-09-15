@@ -30,8 +30,8 @@ This is a <b>DEVELOPER</b> Step-by-step Guide in which we will be using MongoDB 
 
 - Click on <b>"Create Search Index"</b>:
   - Select the <b>"JSON Editor"</b> 
-  - Name the index: "vectorIndex"
-  - Select the right Database 
+  - Name the index: <b>"vectorIndex"</b> 
+  - Select the right Database: <b>"databaseDemo"</b> 
   - <b>Insert</b> the following in the <b>JSON Editor</b>:
 
 ```JSON
