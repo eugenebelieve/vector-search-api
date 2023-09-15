@@ -1,4 +1,4 @@
-# Building a NodeJS Microservice with Vector Search
+# [:fire:DEVELOPERS]Building a NodeJS Microservice with Vector Search
 
 ![NodeJS+MongoDB+OpenAI](images/vector_stack.png)
 
