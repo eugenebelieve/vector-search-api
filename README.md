@@ -5,12 +5,13 @@
 ### What Stack are we going to use ?
 In this Step-by-step Guide we will be using MongoDB (Atlas), NodeJS and OpenAI 
 
-#### We are going to build the Vector Search Microservice in 4 steps: 
+### We are going to build the Vector Search Microservice in 4 steps: 
 1. Create and <b>Database, Collection</b> and <b>Vector Search index</b> on MongoDB Atlas.
 2. Create an <b>API key on OpenAI</b>.
 3. Create the <b>NodeJS microservice</b>.
 4. <b>Bonus</b> : Create a <b>Trigger on MongoDB Atlas</b> that will automatically generate Vector Embeddings for newly inserted or Updated documents.
 
+---
 ### 1. Create a Vector Search index on MongoDB Atlas
 - Go to www.mongodb.com and create an Accounts (if you don't have one) 
 - When you create a new Cluster, give it the <b>username</b>: <b>"demo"</b> and <b>password</b> : <b>"demo"</b>
