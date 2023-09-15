@@ -1,8 +1,8 @@
-# Building a <b>Vector Search</b> Microservice on NodeJS<br />[Developers's Guide:fire:]
+# Building a <b>Vector Search</b> Microservice on NodeJS<br />[Developers Guide:fire:]
 ![NodeJS+MongoDB+OpenAI](images/vector_search_stack.png)
 
-### What Stack are we going to use ?
-This is a <b>DEVELOPER</b> Step-by-step Guide in which we will be using MongoDB (Atlas), NodeJS and OpenAI 
+### What's the Stack ?
+This is a <b>Developer</b> Step-by-step Guide in which we will be using MongoDB Atlas, NodeJS and OpenAI 
 
 ### We are going to build the Vector Search Microservice in 4 steps: 
 1. Create and <b>Database, Collection</b> and <b>Vector Search index</b> on MongoDB Atlas.
@@ -47,8 +47,6 @@ This is a <b>DEVELOPER</b> Step-by-step Guide in which we will be using MongoDB 
   }
 }
 ``````
-:information_source: <b>FYI :</b> OpenAI uses 1,536 dimensions for embeddings in the text-embedding-ada-002 model
-
 It should look like this : 
 
 ![Vector Index](images/vector_index.png)
@@ -56,6 +54,8 @@ It should look like this :
 ... then click next and create Search Index
 
 - [x] Now we have <b>successfully</b> create a <b>Vector Search Index</b> ! :tada:	
+
+:information_source: <b>FYI :</b> OpenAI uses 1,536 dimensions for embeddings in the text-embedding-ada-002 model
 
 ---
 
@@ -122,6 +122,7 @@ async function openaiEmbedding(query) {
   - When in your Atlas Console, just press on <b>"Connect"</b> and choose lastest <b>NodeJS</b> Driver:
 ![Alt text](images/mongodb-connect.png)
 <br />
+
 - Copy the route below to your index.js file:
 
 ```javascript
