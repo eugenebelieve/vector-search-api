@@ -23,11 +23,13 @@ This is a <b>DEVELOPER</b> Step-by-step Guide in which we will be using MongoDB 
 
 - Create a new Database called <b>"databaseDemo"</b> and a collection called <b>"collectionDemo"</b>.
 <br />
+
 - Once the Cluster is created, click on it and go in the <b>"Search"</b> Tab (see below)
 
 ![Alt text](images/search_tab.png)
 
 <br />
+
 - Click on <b>"Create Search Index"</b>:
   - Select the <b>"JSON Editor"</b> 
   - Name the index: "vectorIndex"
