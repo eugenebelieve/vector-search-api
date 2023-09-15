@@ -12,7 +12,7 @@ This is a <b>DEVELOPER</b> Step-by-step Guide in which we will be using MongoDB 
 
 ---
 
-## 1. Create a Vector Search index on MongoDB Atlas
+## 1. Create the Vector Search index on MongoDB Atlas
 ![MongoDB Stack](images/mongodb_stack.png)
 
 - Go to www.mongodb.com and create an Accounts (if you don't have one) 
