@@ -3,7 +3,7 @@
 ![NodeJS+MongoDB+OpenAI](images/vector_stack.png)
 
 ### What Stack are we going to use ?
-In this Step-by-step Guide we will be using MongoDB (Atlas), NodeJS and OpenAI 
+This is a <b>DEVELOPER</b> Step-by-step Guide in which we will be using MongoDB (Atlas), NodeJS and OpenAI 
 
 ### We are going to build the Vector Search Microservice in 4 steps: 
 1. Create and <b>Database, Collection</b> and <b>Vector Search index</b> on MongoDB Atlas.
@@ -12,9 +12,10 @@ In this Step-by-step Guide we will be using MongoDB (Atlas), NodeJS and OpenAI
 4. <b>Bonus</b> : Create a <b>Trigger on MongoDB Atlas</b> that will automatically generate Vector Embeddings for newly inserted or Updated documents.
 
 ---
-![MongoDB Stack](images/mongodb_stack.png)
 
 ## 1. Create a Vector Search index on MongoDB Atlas
+![MongoDB Stack](images/mongodb_stack.png)
+
 - Go to www.mongodb.com and create an Accounts (if you don't have one) 
 - When you create a new Cluster, give it the <b>username</b>: <b>"demo"</b> and <b>password</b> : <b>"demo"</b>
 ![Alt text](images/user_password.png)
@@ -54,16 +55,16 @@ It should look like this :
 - [x] Now we have <b>successfully</b> create a <b>Vector Search Index</b> ! :tada:	
 
 ---
-![OpenAI Stack](images/openai_stack.png)
 
-## 2. Create the API Key on OpenAI (Easy)
+## 2. Create the API Key on OpenAI
+![OpenAI Stack](images/openai_stack.png)
 
 * Go to https://platform.openai.com/account/api-keys
 * Create a API `token` and save it somewhere
 ---
-![NodeJS](images/nodejs_stack.png)
 
 ## 3. Creating the NodeJS Microservice (with Vector Search)
+![NodeJS](images/nodejs_stack.png)
 
 #### Create a `index.js` file and install all the packages:
 ```shell 
@@ -177,4 +178,5 @@ app.listen(port, () => {
 <b>DONE !</b> Our Microservice is Ready ! We just need to add a Trigger that will generate the embedding inside the documents ! 
 
 
-## 4. Last Step, let's create that Trigger and Start Adding documents
+## 4. Last Step, let's create that Trigger and start adding new documents
+
