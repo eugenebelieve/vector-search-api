@@ -28,8 +28,6 @@ This is a <b>DEVELOPER</b> Step-by-step Guide in which we will be using MongoDB 
 
 ![Alt text](images/search_tab.png)
 
-<br />
-
 - Click on <b>"Create Search Index"</b>:
   - Select the <b>"JSON Editor"</b> 
   - Name the index: "vectorIndex"
