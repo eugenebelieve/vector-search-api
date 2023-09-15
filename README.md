@@ -18,11 +18,15 @@ This is a <b>DEVELOPER</b> Step-by-step Guide in which we will be using MongoDB 
 
 - Go to www.mongodb.com and create an Accounts (if you don't have one) 
 - When you create a new Cluster, give it the <b>username</b>: <b>"demo"</b> and <b>password</b> : <b>"demo"</b>
+
 ![Alt text](images/user_password.png)
+
 - Create a new Database called <b>"databaseDemo"</b> and a collection called <b>"collectionDemo"</b>.
 <br />
 - Once the Cluster is created, click on it and go in the <b>"Search"</b> Tab (see below)
+
 ![Alt text](images/search_tab.png)
+
 <br />
 - Click on <b>"Create Search Index"</b>:
   - Select the <b>"JSON Editor"</b> 
