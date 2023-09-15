@@ -34,7 +34,7 @@ This is a <b>DEVELOPER</b> Step-by-step Guide in which we will be using MongoDB 
   - Select the <b>"JSON Editor"</b> 
   - Name the index: "vectorIndex"
   - Select the right Database 
-  - Insert the following JSON into the Editor:
+  - <b>Insert</b> the following in the <b>JSON Editor</b>:
 
 ```JSON
 {
@@ -50,7 +50,7 @@ This is a <b>DEVELOPER</b> Step-by-step Guide in which we will be using MongoDB 
   }
 }
 ``````
-:information_source: OpenAI uses 1,536 dimensions for embeddings in the text-embedding-ada-002 model
+:information_source: <b>FYI :</b> OpenAI uses 1,536 dimensions for embeddings in the text-embedding-ada-002 model
 
 It should look like this : 
 
