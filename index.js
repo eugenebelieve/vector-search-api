@@ -12,7 +12,7 @@ async function openaiEmbedding(query) {
 
   // OpenAI Embeddings
   const url = 'https://api.openai.com/v1/embeddings';
-  const openai_key = "OpenAI-token-here"; // Replace with your OpenAI key.
+  const openai_key = "<YOUR-OPENAI-KEY-HERE>"; // Replace with your OpenAI key.
   
   // OpenAI embeddings APIs
   let response = await axios.post(url, {
@@ -39,24 +39,25 @@ app.get("/vectorSearch/:query", async (req,res)=>{
   try {
     const embedding = await openaiEmbedding(req.params.query);
 
-    const client = new MongoClient("mongodb+srv://user:pass@cluster.example.mongodb.net");
+    const client = new MongoClient("<mongodb+srv://user:pass@cluster.example.mongodb.net>");
     await client.connect();
     
-    const db = client.db("databaseName"); 
-    const collection = db.collection("collectionName"); 
+    const db = client.db("databaseDemo"); 
+    const collection = db.collection("collectionDemo"); 
     
     // Query for similar documents.
     const documents = await collection.aggregate([
         {
           "$search": {
-            "index": "vector-Index-Name", // Replace with the Search Vector Index Name
+            "index": "vectorIndex", // Vector Search Index Name
             "knnBeta": {
             "vector": embedding,
-            "path": "field-Name-Embedding", // Replace with field name that stores the vector embedding
+            "path": "embedding", // You can change the embedding field
             "k": 5
             }
           }
-        }
+        },
+        { $unset: "embedding" } // This will hide the embedding field from the result
         ]).toArray();      
       
     res.send(documents);
