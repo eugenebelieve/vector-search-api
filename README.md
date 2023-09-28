@@ -262,6 +262,7 @@ exports = async function(changeEvent) {
 };
 
 ```
+<br />
 ### We are all set ! We can now insert 5 documents in MongoDB Atlas or using MongoDB Compass :
 
 ```JSON
@@ -292,7 +293,7 @@ exports = async function(changeEvent) {
   }
 ]
 ```
-
+<br />
 
 ### Then we are going to make a GET call to our microservice and replace the `<QUERY>` at the end, with our query
 
