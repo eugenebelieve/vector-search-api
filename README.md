@@ -299,6 +299,8 @@ exports = async function(changeEvent) {
 #### `localhost:8000/vectorSearch/<QUERY>`
 
 ![Alt text](images/navigateur.png)
- It should look like what you see above
+ It should look like what you see above, we should get a list of results from our GET call. 
+ 
+ You can always go a step further and transforme this GET into a POST call. You know how implement Vector Search, now it's all up to you ! 
 
 ## Thank you ! :)
