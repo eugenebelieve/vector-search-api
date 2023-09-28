@@ -263,6 +263,7 @@ exports = async function(changeEvent) {
 
 ```
 <br />
+
 ### We are all set ! We can now insert 5 documents in MongoDB Atlas or using MongoDB Compass :
 
 ```JSON
