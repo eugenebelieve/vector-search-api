@@ -293,6 +293,7 @@ exports = async function(changeEvent) {
 ]
 ```
 
+
 ### Then we are going to make a GET call to our microservice and replace the `<QUERY>` at the end, with our query
 
 #### `localhost:8000/vectorSearch/<QUERY>`
