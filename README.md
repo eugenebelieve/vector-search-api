@@ -1,4 +1,4 @@
-# Building a <b>Vector Search</b> Microservice on NodeJS<br />[Developer's Guide:fire:]
+# Building a <b>Vector Search</b> Microservice on NodeJS<br />[A Developer's Guide :fire:]
 ![NodeJS+MongoDB+OpenAI](images/vector_search_stack.png)
 
 ### What's the Stack ?
@@ -262,7 +262,7 @@ exports = async function(changeEvent) {
 };
 
 ```
-### We are all set ! We can now insert 5 documents to test it :
+### We are all set ! We can now insert 5 documents in MongoDB Atlas or using MongoDB Compass :
 
 ```JSON
  [
@@ -292,3 +292,12 @@ exports = async function(changeEvent) {
   }
 ]
 ```
+
+### Then we are going to make a GET call to our microservice and replace the `<QUERY>` at the end, with our query
+
+#### `localhost:8000/vectorSearch/<QUERY>`
+
+![Alt text](images/navigateur.png)
+ It should look like what you see above
+
+## Thank you ! :)
